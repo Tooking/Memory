@@ -27,21 +27,21 @@ header{
   cursor: pointer;
 }
 
-#game{
-  margin: 30px 20%;
-  width: 60%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr [col-1]);
-  grid-auto-rows: 125px;
-  grid-gap: 10px;
-}
+  #game{
+    margin: 30px 20%;
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr [col-1]);
+    grid-auto-rows: 180px;
+    grid-gap: 10px;
+  }
 
 .card{
   background-color: yellow;
   border-radius: 5%;
   border: 1px solid black;
-  font-size: 30px;
+  font-size: 45px;
   font-family: Arial;
   position: relative;
   color: #000;
@@ -84,4 +84,11 @@ button:disabled:not(.card) {
   text-align: center;
   width: 100%;
   height: 50px;
+}
+
+@media (min-device-width: 501px){
+  #game{
+    grid-template-columns: repeat(9, 1fr [col-1]);
+    grid-auto-rows: 125px;
+  }
 }
