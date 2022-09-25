@@ -86,6 +86,7 @@ button:disabled:not(.card) {
   height: 50px;
 }
 
+/* new */
 @media (min-device-width: 501px){
   #game{
     grid-template-columns: repeat(9, 1fr [col-1]);
